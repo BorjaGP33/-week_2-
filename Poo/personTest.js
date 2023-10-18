@@ -9,4 +9,12 @@ persona.printAll()
 persona.printhobbies()
 
 persona2.printAll()
-persona.printhobbies()
+persona2.printhobbies()
+
+persona.calculaEdad()
+persona.calcularIMC()
+
+persona2.calculaEdad()
+persona2.calcularIMC()
+
+
