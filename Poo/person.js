@@ -11,6 +11,7 @@ class person {
 
     //  ______ reto-2
 
+//metodos:
 
     calcularIMC() {
         return this.peso / (this.altura * this.altura) * 10000
@@ -26,22 +27,26 @@ class person {
 
     calculaEdad(yearOfBirth) {
         let year = new Date().getFullYear();
-        return this.year - yearOfBirth;
+        return year - this.yearOfBirth;
     }
 
 
 
 }
 let persona = new person("Jose", 75, 175, 1963);
-//     console.log(persona);
+    console.log(persona);
 
 persona.Hobbies = ["nadar", "correr", "jugar"];
+console.log(persona.calculaEdad());
 
-//     console.log(persona.calcularIMC());
+    console.log(persona.calcularIMC());
 persona.printAll()
 persona.printhobbies()
+persona.calculaEdad()
+persona.calcularIMC()
 
-// reto 3
+
+
 
 module.exports = { person }
 
