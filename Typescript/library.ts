@@ -10,7 +10,7 @@ export class Library {
     constructor(book: Book[], address: string, manager: string) {
         this.books = book;
         this.address = address;
-            this.manager = manager;
+        this.manager = manager;
     }
 
 
@@ -49,14 +49,14 @@ export class Library {
     }
 
     public toString() {
-       
+
         let imprime = "";
 
-for (let book of this.books) {
-   
-    imprime+= book.toString()
+        for (let book of this.books) {
 
-};
+            imprime += book.toString()
+
+        };
  
 return imprime 
 }
